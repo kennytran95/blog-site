@@ -28,8 +28,32 @@ body {
   background:rgb(97, 214, 163, 0.8);
 }
 
+.faker {
+  transition: all 200ms ease-in;
+}
+
+.faker:hover {
+  color:rgb(255, 58, 58);
+}
+
 .illenium{
   height:85px;
+}
+
+.illenium-title {
+  transition: all 200ms ease-in;
+}
+
+.illenium-title:hover {
+  color: rgb(206, 99, 61);
+}
+
+.leffen {
+  transition: all 200ms ease-in;
+}
+
+.leffen:hover {
+  color:rgb(252, 255, 58);
 }
 
 .nav-list {
@@ -70,3 +94,61 @@ body {
   text-align:center;
 }
 
+.shimoshi {
+  transition: all 200ms ease-in;
+}
+
+.shimoshi:hover {
+  color:#741BFE
+}
+
+.tweet {
+  height: 11rem;
+  width: 25rem;
+  text-align: center;
+  font-size: medium;
+  background: rgb(21, 32, 43); 
+  margin: 0 auto;
+  border: gray solid 0.2px;
+  border-radius: 10px;
+  list-style: none;
+  transition: all 200ms ease-in;
+}
+
+.tweet:hover{
+  background-color: rgb(32, 60, 80);
+}
+
+.tweetBody {
+  color:white;
+  font-size: small;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.tweetDate {
+  color: rgb(255, 255, 255);
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.tweetTitle {
+  color:rgb(167, 255, 196);
+  font-size: 1.6rem;
+  font-family:Verdana;
+  font-weight:bolder;
+  text-align: left;
+  margin: 0 auto;
+  transition: all 200ms ease-in;
+}
+
+.tweetUser {
+  color: rgb(255, 255, 255);
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.tweetTitle:hover{
+  color: rgb(0, 255, 98);
+}

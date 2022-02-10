@@ -1,44 +1,62 @@
 const dummyData = [
   {
-    title: 'Faker gets solo killed by random barcode username?!',
-    body: 'WHO IS THIS? A random barcode username player assassinates Faker on leblanc with lee sin!',
-    date: '01/01/2013',
+    username: 'Esports Reporter12',
+    title: '<strong class="faker">Faker</strong> gets solo killed by random barcode username?!',
+    body: 'WHO IS THIS? A random barcode username assassinates <strong class="faker">Faker</strong> on leblanc with lee sin!',
+    date: '01/01/2013 - 4:12 am',
   },
   {
-    title: 'Leffen johns for the 5th time this month',
-    body: 'Leffen suffers another defeat to the hands of Plup. Leffen then proceeds to go to twitter and blame food poisoning. Every lost of leffen has had some form of excuse. Coincidence? We think not...',
-    date: '05/1/2015',
+    username: 'Mangolover99',
+    title: '<strong class="leffen">Leffen</strong> johns for the 5th time this month',
+    body: '<strong class="leffen">Leffen</strong> suffers another defeat to the hands of Plup. Leffen then proceeds to go to twitter and blame food poisoning. Every lost of leffen has had some form of excuse. <strong class="faker">Coincidence?</strong> I think not...',
+    date: '05/1/2015 - 12:30 pm',
   },
   {
-    title: 'Leffen won EVO!',
-    body: 'Leffen has won EVO beating Aramada, Plup, and hungrybox! Maybe complaining was the secret sauce after all...',
-    date: '08/17/2017',
+    username: 'Leffenlover6',
+    title: '<strong class="leffen">Leffen</strong> won EVO!',
+    body: '<strong class="leffen">Leffen</strong> has won EVO beating Aramada, Plup, and Hungrybox! Maybe <strong class="faker">complaining</strong> was the secret sauce after all...',
+    date: '08/17/2017 - 6:44 pm',
   },
   {
-    title: 'Illenium announces his 4th album - Flares',
-    body: 'Illenium comes out of retirement to announce his fourth and final album - Flares. He says this album will surround his feelings of revival and will be his best album yet.',
-    date: '01/30/2022',
+    username: 'Illeniial111',
+    title: '<strong class="illenium-title">Illenium</strong> announces his 4th album - Flares',
+    body: '<strong class="illenium-title">Illenium</strong> comes out of retirement to announce his fourth and final album - Flares. He says this album will surround his feelings of revival and will be his best album yet.',
+    date: '01/30/2022 - 1:14 pm',
   },
   {
-    title: 'Shimoshi becomes a billionaire',
-    body: 'Shimoshi has had tremendous success from his startup named iPunchStuff. This company specializes in being built different and being better. Ever since launching his start-up in 2022, he has risen up on the global radar at lightning speeds!',
-    date: '07/07/2025',
+    username:'Shimoshisimp777',
+    title: '<strong class="shimoshi">Shimoshi</strong> becomes a billionaire',
+    body: '<strong class="shimoshi">Shimoshi</strong> has had tremendous success from his startup named iPunchStuff. This company specializes in being built different and being better. Ever since launching his start-up in 2022, he has risen up on the global radar at record speeds!',
+    date: '07/07/2025 - 2:14 am',
   }
 ];
 
 for (let data of dummyData) {
-  let tweet = document.createElement('li'); 
-  tweet.id = "myTweet";
-  tweet.style.height = "140px";
-  tweet.style.width = "50rem";
-  tweet.style.textAlign = 'center';
-  tweet.style.background = "#15202b";
-  tweet.style.margin = "0 auto";
-  tweet.style.border = "gray solid 0.2px";
-  tweet.style.borderRadius = "10px";
-  tweet.style.listStyle = "none";
-  tweet.innerText = data.title + " - " + data.date + "\n" + data.body;
+  let tweet = document.createElement('div'); 
+  tweet.className = "tweet";
+  
+  let tweetBody = document.createElement('div');
+  tweetBody.className = 'tweetBody';
+  tweetBody.innerHTML = data.body;
+
+  let tweetDate = document.createElement('div');
+  tweetDate.className = 'tweetDate';
+  tweetDate.innerText = data.date + "\n" + "\n";
+
+  let tweetTitle = document.createElement('div');
+  tweetTitle.className = 'tweetTitle';
+  tweetTitle.innerHTML = data.title + '\n';
+
+  let tweetUser = document.createElement('div');
+  tweetUser.className = 'tweetUser';
+  tweetUser.innerText = data.username;
+
   document.body.appendChild(tweet);
+  tweet.appendChild(tweetUser);
+  tweet.appendChild(tweetTitle);
+  tweet.appendChild(tweetDate);
+  tweet.appendChild(tweetBody);
+
 }
 
 
