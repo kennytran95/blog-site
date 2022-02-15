@@ -1,6 +1,6 @@
 const dummyData = [
   {
-    username: 'Esports Reporter12',
+    username: 'EsportsReporter12',
     title: '<strong class="faker">Faker</strong> gets solo killed by random barcode username?!',
     body: 'WHO IS THIS? A random barcode username assassinates <strong class="faker">Faker</strong> on leblanc with lee sin!',
     date: '01/01/2013 - 4:12 am',
@@ -41,11 +41,11 @@ for (let data of dummyData) {
 
   let tweetDate = document.createElement('div');
   tweetDate.className = 'tweetDate';
-  tweetDate.innerText = data.date + "\n" + "\n";
+  tweetDate.innerText = data.date;
 
   let tweetTitle = document.createElement('div');
   tweetTitle.className = 'tweetTitle';
-  tweetTitle.innerHTML = data.title + '\n';
+  tweetTitle.innerHTML = data.title;
 
   let tweetUser = document.createElement('div');
   tweetUser.className = 'tweetUser';
