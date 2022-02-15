@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flares</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <navbar>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#">
+            <img class="illenium" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d326ba6-1412-40d2-becb-99c74b70e94a/dee99vx-758a8982-22f7-4baf-a3fb-9c71fc14cb86.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkMzI2YmE2LTE0MTItNDBkMi1iZWNiLTk5Yzc0YjcwZTk0YVwvZGVlOTl2eC03NThhODk4Mi0yMmY3LTRiYWYtYTNmYi05YzcxZmMxNGNiODYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SKAQKSBjn7_VsqC_t-h-hPNSwvo3XlRecheB8oaAWRE" alt="Illenium logo">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn-primary">Tweet</button>
+        </li>
+      </ul>
+    </navbar>
+    <div class="newsfeed-title">
+      <span>
+        What's Happening
+      </span>
+    </div>
+    <div class="tweets" id="tweet">
+      <ul class="tweet-ul"></ul>
+    </div>
+	<script src="scripts.js"></script>
+  </body>
+</html>
