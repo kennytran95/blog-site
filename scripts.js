@@ -51,15 +51,22 @@ for (let data of dummyData) {
   tweetUser.className = 'tweetUser';
   tweetUser.innerText = data.username;
 
-  document.body.appendChild(tweet);
+  // document.body.appendChild(tweet);
   tweet.appendChild(tweetUser);
   tweet.appendChild(tweetTitle);
   tweet.appendChild(tweetDate);
   tweet.appendChild(tweetBody);
 
+  // const appendTweet = setInterval(document.body.appendChild(tweet), 10000);
+  // clearInterval(appendTweet);
+
+  //button with eventlistener + attempt to render per 10s
+  const tweetUpdateButton = document.querySelector('.update-btn');
+  const tweetUpdateHandler = tweetUpdateButton.addEventListener('click', () => {
+  setInterval(document.body.appendChild(tweet), 10000);
+});
+
 }
-
-
 
 /* render information into DOM (each into their own box)
 style it

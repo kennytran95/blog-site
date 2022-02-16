@@ -108,6 +108,12 @@ body {
   text-align:center;
 }
 
+.refresh{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .shimoshi {
   transition: all 200ms ease-in;
 }
@@ -178,4 +184,29 @@ body {
 
 .tweetTitle:hover{
   color: rgb(0, 255, 98);
+}
+
+.update-btn{
+  background-color:rgba(42, 50, 95, 1);
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem; 
+  width: 30rem;
+  border:none;
+  padding: 1rem 1.5rem;
+  outline:none; 
+  border-radius: 1.2rem; 
+  cursor: pointer;
+  transition:all 200ms ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update:hover{
+  background-color:rgba(42, 50, 95, 0.8);
+}
+
+.visible {
+  display: block;
 }
