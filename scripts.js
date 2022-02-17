@@ -122,7 +122,7 @@ function addDummyData() {
    'ended up on youtube ', 'jumped so high ', 'to that concert ', 'haha ', 'wants to get boba ', 'went to starbucks '];
   let tweetUserBank = ['kitty', 'lover', 'puppy', 'azn','boi', 'gurl', 'rice', 'hooper', 'swimming', 'flying', 'genius', 'loser', 'jiggly', 'chaser'];
   let newEntry = {
-    username: tweetUserBank[Math.floor(Math.random() * (32 - 1) + 1)] + tweetUserBank[Math.floor(Math.random() * (32 - 1) + 1)],
+    username: tweetUserBank[Math.floor(Math.random() * (14 - 1) + 1)] + tweetUserBank[Math.floor(Math.random() * (14 - 1) + 1)],
     title: titleBank[Math.floor(Math.random() * 10)],
     body: tweetBodyBank[Math.floor(Math.random() * (23 - 1) + 1)] + tweetBodyBank[Math.floor(Math.random() * (23 - 1) + 1)] + tweetBodyBank[Math.floor(Math.random() * (23 - 1) + 1)],
     date: 'date',
@@ -130,7 +130,7 @@ function addDummyData() {
   dummyData.unshift(newEntry);
 }
 
-const renderNewDummyData = setInterval(addDummyData, 10000);
+const renderNewDummyData = setInterval(addDummyData, 1000);
 
 const allTweets = document.querySelectorAll('.tweet');
 
